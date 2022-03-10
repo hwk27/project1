@@ -19,11 +19,7 @@ pipeline {
         stage('TF Init&Plan') {
             steps {
                 sh 'terraform init'
-                sh 'terraform plan'
-                dir ('testa') {
-                    sh 'pwd'
-            }
-    
+                sh 'terraform plan'                   
          }      
       }
 
