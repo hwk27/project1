@@ -1,8 +1,8 @@
-
+# 제일 중요
 provider "google" {
   version = "3.5.0"
-  credentials = "/var/lib/jenkins/eloquent-marker-338005-1fa6b785f519.json"
-  project = "eloquent-marker-338005"
+  credentials = "/var/lib/jenkins/pjt-an3-dev-vm3-ca30ceac792d.json"
+  project = "pjt-an3-dev-vm3"
   region  = "asia-northeast3"
   zone    = "asia-northeast3-a"
 }
@@ -17,7 +17,7 @@ resource "google_compute_instance" "default" {
   metadata_startup_script = data.template_cloudinit_config.cloudinit-jenkins.rendered
 
 
-
+# 여기에 쓰는 태그들이 웹에 자동으로 업뎃 됨, 다른 곳에 있는 정보들 불러오기
   tags = ["sgtag-jenkins-ssh", "sgtag-jenkins-web","sgtag-jenkins-instance", "sgtag-test", "sgtag-80"]
   
   boot_disk {

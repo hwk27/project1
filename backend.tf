@@ -3,9 +3,10 @@ terraform{
         google = " ~> 3.5"
     }
 
+# 버킷에 자동 연동
     backend "gcs"{
-        credentials = "/var/lib/jenkins/eloquent-marker-338005-1fa6b785f519.json"
-        bucket      = "haram-test"
+        credentials = "/var/lib/jenkins/pjt-an3-dev-vm3-ca30ceac792d.json"
+        bucket      = "hyewon-test"
         prefix      = "jenkins.terraform.tfstate"
     }
 }

@@ -1,3 +1,5 @@
+# VM 이름 지정
+
 variable "VM_NAME"{
     default = "vm-terraform-test-gcloud"
 }
