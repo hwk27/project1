@@ -4,7 +4,7 @@ terraform{
     }
 
     backend "gcs"{
-        credentials = "/var/lib/jenkins/pjt-an3-dev-vm3-gcs.json"
+        credentials = "/var/lib/jenkins/pjt-an3-dev-vm3-ca30ceac792d.json"
         bucket      = "hyewon-test-bucket2"
         prefix      = "jenkins.terraform.tfstate"
     }
